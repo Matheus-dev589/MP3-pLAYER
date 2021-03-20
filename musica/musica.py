@@ -315,13 +315,13 @@ Janela.config(menu = MENU)
 
 # Menu de adição de músicas
 
-ADD_MUSICA = Menu(MENU)
+ADD_MUSICA = Menu(MENU, bg="#181818", fg = CORDAFONTE, font = FONTE)
 MENU.add_cascade(label = "Adicionar musicas", menu = ADD_MUSICA)
 ADD_MUSICA.add_command(label = "Adicionar uma ou mais musicas a playlist", command = add_song)
 
 # Menu de remoção de músicas
  
-remover_musica = Menu(MENU)
+remover_musica = Menu(MENU, bg="#181818", fg = CORDAFONTE, font = FONTE)
 MENU.add_cascade(label="Remover Musica", menu=remover_musica)
 remover_musica.add_command(label="Excluir uma musica da playlist", command = apagar_musica)
 remover_musica.add_command(label="Excluir todas as musicas da playlist", command = apagar_todas_musica)
